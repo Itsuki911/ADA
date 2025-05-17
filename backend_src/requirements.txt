@@ -1,2 +1,7 @@
 requests
 python-dotenv
+
+# linters
+flake8
+pylint
+pylint-flask
