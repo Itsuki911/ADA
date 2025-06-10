@@ -1,5 +1,6 @@
 requests
 python-dotenv
+types-requests
 
 # linters
 flake8

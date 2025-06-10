@@ -1,7 +1,13 @@
-import os
 import requests
 
-def ask_groq(prompt: str, apikey: str, model: str = "llama-3.3-70b-versatile") -> str:
+
+def ask_groq(
+    prompt: str,
+    apikey: str,
+    model: str = (
+        "llama-3.3-70b-versatile"
+    )
+) -> str:
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",

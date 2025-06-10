@@ -9,7 +9,9 @@ groq_api_key = os.getenv('GROQ_API_KEY')
 
 if __name__ == "__main__":
     if groq_api_key is None:
-        raise ValueError("GROQ_API_KEY is not set in the environment variables.")
+        raise ValueError(
+            "GROQ_API_KEY is not set in the environment variables."
+        )
     
     result = ask_groq(
         "Explain the importance of fast language models", 
