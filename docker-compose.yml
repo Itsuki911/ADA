@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./frontend:/app
+    command: npm run dev
+    stdin_open: true
+    tty: true
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./backend:/app

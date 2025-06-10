@@ -2,7 +2,11 @@ requests
 python-dotenv
 
 arxiv
+
 types-requests
+
+fastapi
+pydantic
 
 # linters
 flake8
