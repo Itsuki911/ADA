@@ -1,7 +1,12 @@
 .env
+
 __pycache__.env
 __pycache__
 
 .pylintrc
 .mypy_cache/
 flake8
+
+
+node_modules/
+dist/
